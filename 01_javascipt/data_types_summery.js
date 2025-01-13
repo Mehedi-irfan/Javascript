@@ -9,3 +9,11 @@ console.log(id == anotherId);
 
 //Reference (Non Premitive)
 //Array, Object, Function
+
+
+//Stack and heap
+//Stack use for premititve data type
+//In stact data data will give a copy of each value
+
+//Heap use for Non Premitive data type
+//in heap if you put value you can get reference of value
