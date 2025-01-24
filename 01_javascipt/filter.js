@@ -21,6 +21,7 @@ const number = [1, 3, 5];
 const evenNumbers = number.filter(num => num % 2 === 0);
 
 console.log(evenNumbers); // Output: [] (empty array)
+console.log(number);
 
 
 const books = [
@@ -45,3 +46,4 @@ const filterBook = books.filter((book)=> {
     return book.published >= 1990 
 })
 console.log(filterBook);
+console.log(books);

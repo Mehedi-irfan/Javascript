@@ -20,3 +20,19 @@ const multipliedNumbers = number.map(num => num * 3);
 
 console.log(multipliedNumbers); // Output: [3, 6, 9, 12, 15]
 console.log(number); // Original array remains unchanged: [1, 2, 3, 4, 5]
+
+const names = ['Mehedi', 'Hasan', 'Irfan'];
+
+// Convert each name to uppercase
+const upperCaseNames = names.map(name => name.toUpperCase());
+
+console.log(upperCaseNames); // Output: ['MEHEDI', 'HASAN', 'IRFAN']
+console.log(names); // Original array remains unchanged: ['Mehedi', 'Hasan', 'Irfan']
+
+
+const numbersList = [1, 2, 3, 4, 5];
+
+// Forget to return a value in the callback
+const result = numbersList.map(num => { num * 2 }); // Missing `return`  //after using scope or currly backet we should use return keyword
+
+console.log(result); // Output: [undefined, undefined, undefined, undefined, undefined]
