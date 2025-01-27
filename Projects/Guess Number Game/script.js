@@ -44,6 +44,7 @@ function validateGuess(guess){
 function checkGuess(guess){
    if(guess == randomNumber){
     displayMessage('You guessed it Right!')
+    endGame()
    }else if(guess < randomNumber){
     displayMessage("Your Number Is Too Low!")
    }else if (guess > randomNumber){
@@ -66,7 +67,8 @@ function endGame(){
     userInput.value = ' ';
     userInput.setAttribute("disabled", '');
     p.classList.add('button');
-    p.innerHTML= `<h3 id="new_Game">Start New Game</h3>`;
+    lowOrHi.innerHTML = ' ';
+    p.innerHTML= `<button id="new_Game">Start New Game</button>`;
     startOver.appendChild(p);
     playGame = false;
     newGame()
