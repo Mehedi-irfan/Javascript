@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #image{
+            padding: 50px;
+        }
+        #image, img{
+            width : 200px;
+            height : 120px;
+            object-fit:cover;
+            padding : 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul id="image">
+            <li><img src="https://images.pexels.com/photos/29971507/pexels-photo-29971507/free-photo-of-tranquil-forest-scene-in-winter-england.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></li>
+            <li><img src="https://images.pexels.com/photos/6864554/pexels-photo-6864554.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></li>
+            <li><img src="https://images.pexels.com/photos/30373532/pexels-photo-30373532/free-photo-of-cozy-winter-coffee-moment-over-snowy-stockholm.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></li>
+            <li><img src="https://images.pexels.com/photos/19570344/pexels-photo-19570344/free-photo-of-snow-in-deep-forest-in-winter.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></li>
+        </ul>
+    </div>
+    <script>
+        document.querySelector('#image').addEventListener('click', (e)=> {
+            //console.log(e.target.parentNode);
+            if(e.target.tagName === "IMG"){
+                let removeIt = e.target.parentNode;
+                removeIt.remove()
+            }
+        })
+    </script>
+</body>
+</html>
