@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Welcome to the world!</h1>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+    </div>
+    <script>
+        document.querySelector('#start').addEventListener('click', ()=> {
+            const one = ()=> {
+                console.log("Hi, I am a Engineer");
+            }
+            setTimeout(one, 2000)
+            document.querySelector('#stop').addEventListener('click', ()=> {
+                clearTimeout(one)
+            })
+        })
+       
+    </script>
+</body>
+</html>
